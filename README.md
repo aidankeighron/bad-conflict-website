@@ -1,2 +1,0 @@
-# bad conflict website
- 
