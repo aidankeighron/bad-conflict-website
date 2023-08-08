@@ -1,29 +1,29 @@
 site: JDox
 title: JDox
-greetings: Hi 👋
+greetings: Hi
 description: >-
   JDox is Jekyll blog theme powered by Github Pages
 lang: en
 image: https://res.cloudinary.com/notee/image/upload/v1640411291/notes/imgseo.jpg
 timezone:  Asia/Jakarta
-repo: https://github.com/aliifam/cnote # site repo [optional]
-data-theme: light # default theme "dark" | "light"
+repo: https://github.com/aidankeighron/bad-conflict-website # site repo [optional]
+data-theme: dark # default theme "dark" | "light"
 discus-identifier: webthme
 default-thumb: https://res.cloudinary.com/notee/image/upload/v1640412257/notes/default-thumb.webp
 
 author:
-  name: Aliif Arief
-  url: https://notes.aliif.space/
-  bio: just ordinary boy interest in software development 
-  avatar: https://res.cloudinary.com/notee/image/upload/v1640410819/notes/avatar.jpg
-  username: aliifam # general username
-  github: aliifam # github username
-  twitter: lifrief # twitter username
-  email: me@aliif.space # email adress
+  name: Aidan Keighron
+  url: https://aidankeighron.github.io/
+  bio: Team Manager
+  avatar: https://avatars.githubusercontent.com/u/78337317?v=4
+  username: aidan # general username
+  github: aidankeighron # github username
+  # twitter: lifrief # twitter username
+  email: aidankeighron@gmail.com # email adress
 
-twitter:
-  username: lifrief
-  card: summary_large_image
+# twitter:
+#   username: lifrief
+#   card: summary_large_image
 
 # Font Settings
 googlewebfonts: family=Archivo:wght@400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900
