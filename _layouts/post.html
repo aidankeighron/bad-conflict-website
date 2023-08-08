@@ -22,8 +22,6 @@ layout: default
   </span>
 </section>
 
-{% include share.html %}
-
   <nav class="post-nav">
     {% if page.previous %}
     <a class="post-nav-item post-nav-prev" href="{{ page.previous | relative_url }}">
@@ -38,10 +36,3 @@ layout: default
     {% endif %}
 
   </nav>
-{% include disqus.html %}
-<script defer src="{{ site.url }}{{ site.baseurl }}/assets/js/applause-button.js"></script>
-
-{% assign gambar = page.content %}
-{% if gambar contains '<img ' %}
-	<script defer src="{{ site.url }}{{ site.baseurl }}/assets/js/zoom-image.js"></script>
-{% endif %}

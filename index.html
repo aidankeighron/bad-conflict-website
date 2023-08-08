@@ -21,7 +21,6 @@ layout: default
     <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="mr-20">
       <div class="card-wrapper">
         <div class="background"></div>
-        <img class="image lazyload" src="{{ site.url }}{{ site.baseurl }}/img/placeholder.svg" data-src="{% if post.thumb %} {{ site.url }}{{ site.baseurl }}{{ post.thumb }} {% else %} {{ site.default-thumb }} {% endif %}"  alt="{{ post.title }}">
         <div class="kepala p-24"><h1 class="judul">{{ post.title }}</h1><p>{{ post.description }}</p></div>
       </div>
     </a>
