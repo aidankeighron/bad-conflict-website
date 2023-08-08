@@ -4,7 +4,7 @@ title: all the authors
 ---
 {% include homehead.html %}
 
-<h1>Authors</h1>
+<h1>Team Members</h1>
 
 {% for author in site.authors %}
     {% assign totpost = 0 %}
@@ -14,13 +14,13 @@ title: all the authors
     {% endfor %}
     <div class="allauthors">
         <div>
-            <p class="allauthors-title"><a href="{{ author.url }}">{{ author.name }}</a></p>
+            <p class="allauthors-title"><a href="{{ author.bio_url }}">{{ author.name }}</a></p>
             <p>{{ author.bio }}</p>
             <p>
-                {% if totpost <= 1 %}
-                {{ totpost }} total post
+                {% if totpost == 1 %}
+                {{ totpost }} robot
                 {% else %}
-                {{ totpost }} total posts
+                {{ totpost }} robots
                 {% endif %}
             </p>
         </div>
