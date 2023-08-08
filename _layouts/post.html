@@ -12,9 +12,6 @@ layout: default
       <img class="author-post_avatar" src="{{ author.avatar }}" alt="">
       <div>
         <a href="{{ site.url }}{{ site.baseurl }}{{ author.url }}"><p class="author-post_p">{{ author.name }}</p></a>
-        {% assign minute=content | number_of_words | divided_by: 265 | plus: 1 %}
-        <time class="author-post_p" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }} •    
-          {% if page.minute %} {{ page.minute }} {% else %} {{ minute }} {% endif %} min read</time>
       </div>
     </div>
   {% endif %}
