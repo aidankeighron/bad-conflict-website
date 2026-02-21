@@ -23,7 +23,8 @@ export default function Navbar(): React.ReactNode {
                 alt="Bad Conflict Logo" 
                 width={32} 
                 height={32} 
-                className="w-auto h-8"
+                className="h-8 w-auto"
+                style={{ width: "auto" }}
               />
               <span className="text-xl font-bold tracking-tighter text-white">BAD CONFLICT</span>
             </Link>

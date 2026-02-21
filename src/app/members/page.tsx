@@ -67,6 +67,7 @@ export default function MembersPage(): React.ReactNode {
                   alt={member.name}
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
             </div>

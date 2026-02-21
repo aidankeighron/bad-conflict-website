@@ -19,6 +19,7 @@ export default function Home(): React.ReactNode {
             width={800}
             height={800}
             className="object-contain"
+            style={{ width: "auto" }}
             priority
           />
         </div>

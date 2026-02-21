@@ -66,6 +66,7 @@ export default function RobotsPage(): React.ReactNode {
                 alt={robot.name}
                 fill
                 className="object-contain p-8"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className="md:w-1/2 p-8 flex flex-col justify-between">
