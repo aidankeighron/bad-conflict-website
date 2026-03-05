@@ -76,6 +76,26 @@ export default function Home(): React.ReactNode {
             <video 
               controls 
               className="absolute inset-0 w-full h-full object-cover bg-black"
+              preload="metadata"
+            >
+              <source src="/images/horizon video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div className="premium-card overflow-hidden rounded-2xl aspect-video relative shadow-2xl shadow-accent/20">
+            <video 
+              controls 
+              className="absolute inset-0 w-full h-full object-cover bg-black"
+              preload="metadata"
+            >
+              <source src="/images/horizon vs bubbles.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div className="premium-card overflow-hidden rounded-2xl aspect-video relative shadow-2xl shadow-accent/20">
+            <video 
+              controls 
+              className="absolute inset-0 w-full h-full object-cover bg-black"
               poster="/images/first event.jpg"
               loop={true}
               muted={true}

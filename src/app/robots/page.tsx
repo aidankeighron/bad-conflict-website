@@ -36,6 +36,28 @@ const robots: Robot[] = [
     }
   },
   {
+    name: "Bean",
+    description: "Bean.",
+    image: "/images/bean v1.jpg",
+    stats: {
+      weight: "300g",
+      weapon: "Wedge",
+      dimensions: "7in x 8in x 1in",
+      winLoss: "4W - 4L"
+    }
+  },
+  {
+    name: "Carrot Shredder",
+    description: "Carrots shredded.",
+    image: "/images/carrot shredder v1.jpg",
+    stats: {
+      weight: "410g",
+      weapon: "Horizontal Spinner",
+      dimensions: "7in x 6in x 2.5in",
+      winLoss: "1W - 2L"
+    }
+  },
+  {
     name: "Twofold",
     description: "Twofold is a double wedge designed to get under opponents and push them around. Its unique design includes a spare wedge ready to go, allowing it to take significantly more damage. Because it sits just 1 inch off the ground, some weapons aren't even able to hit it.",
     image: "/images/twofold v2.jpg",
@@ -55,7 +77,18 @@ const robots: Robot[] = [
       weapon: "Wedge",
       winLoss: "5W - 4L"
     }
-  }
+  },
+  {
+    name: "Carrot",
+    description: "Carrots.",
+    image: "/images/carrot v1.jpg",
+    stats: {
+      weight: "280g",
+      weapon: "Wedge",
+      dimensions: "7in x 6in x 2in",
+      winLoss: "2W - 1L"
+    }
+  },
 ];
 
 /**
