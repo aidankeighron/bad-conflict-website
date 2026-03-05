@@ -5,12 +5,7 @@ interface Robot {
   description: string;
   image: string;
   isFirstBot?: boolean;
-  stats?: {
-    weight: string;
-    weapon?: string;
-    dimensions?: string;
-    winLoss?: string;
-  };
+  stats?: {[key: string]: string};
 }
 
 const robots: Robot[] = [
