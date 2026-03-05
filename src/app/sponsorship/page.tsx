@@ -127,10 +127,14 @@ export default function Sponsorship(): React.ReactNode {
           </p>
           <a 
             href="mailto:aidankeighron@gmail.com,seankeighron@gmail.com?subject=Sponsorship%20Inquiry" 
-            className="bg-accent text-white px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition-transform inline-block shadow-lg shadow-accent/30 tracking-wide"
+            className="bg-accent text-white px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition-transform inline-block shadow-lg shadow-accent/30 tracking-wide mb-6"
           >
             Contact Us to Partner
           </a>
+          <p className="text-gray-400">
+            Or email us directly at: <br className="md:hidden" />
+            <a href="mailto:aidankeighron@gmail.com" className="text-white hover:text-accent font-medium">aidankeighron@gmail.com</a>
+          </p>
         </div>
       </section>
     </div>
