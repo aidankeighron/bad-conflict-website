@@ -99,6 +99,18 @@ const robots: Robot[] = [
       winLoss: "2W - 1L"
     }
   },
+  {
+    name: "Porcupine",
+    description: "Porcupine.",
+    image: "/images/porcupine v1.jpg",
+    isFirstBot: true,
+    stats: {
+      weight: "230g",
+      weapon: "Wedge",
+      dimensions: "7in x 6in x 2in",
+      winLoss: "2W - 1L"
+    }
+  },
 ];
 
 /**
