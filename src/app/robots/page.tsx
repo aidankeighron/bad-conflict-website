@@ -16,7 +16,7 @@ const robots: Robot[] = [
   {
     name: "Horizon",
     description: "Horizon is a fierce horizontal spinner. Version 2 features a TPU chassis to absorb hits and a 101g AR500 weapon spinning at 18,000 RPM. With a tip speed of 350 MPH, it's designed to be a formable foe. It uses a belt-driven system to protect the motor from direct impacts.",
-    image: "/images/logo.png", // Using logo as placeholder if specific Horizon photo is missing
+    image: "/images/horizon v3.jpg",
     stats: {
       weight: "450g",
       weapon: "101g AR500 spinner @ 18k RPM",

@@ -58,6 +58,33 @@ export default function Home(): React.ReactNode {
         </div>
       </section>
 
+      {/* Media Section */}
+      <section className="w-full max-w-7xl mx-auto px-4 py-12">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Watch Us In Action</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="premium-card overflow-hidden rounded-2xl aspect-video relative shadow-2xl shadow-accent/20">
+            <iframe 
+              src="https://www.youtube.com/embed/j2YbS2WY6ww" 
+              title="Bad Conflict in Action" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowFullScreen
+              className="absolute inset-0 w-full h-full"
+            ></iframe>
+          </div>
+          <div className="premium-card overflow-hidden rounded-2xl aspect-video relative shadow-2xl shadow-accent/20">
+            <video 
+              controls 
+              className="absolute inset-0 w-full h-full object-cover bg-black"
+              poster="/images/first event.jpg"
+            >
+              <source src="/images/cuddles video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
       {/* Philosophy Cards */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-4 py-24">
         <div className="premium-card p-8">
