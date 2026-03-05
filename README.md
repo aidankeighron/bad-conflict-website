@@ -1,4 +1,4 @@
-# Bad Conflict — Combat Robotics Website
+# Bad Conflict
 
 Official website for **Bad Conflict**, a 501(c)(3) non-profit combat robotics team focused on making the sport accessible to college and high school students. The site showcases the team's robots, members, media, and sponsorship opportunities.
 
