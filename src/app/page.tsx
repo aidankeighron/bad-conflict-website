@@ -65,8 +65,7 @@ export default function Home(): React.ReactNode {
           <div className="premium-card overflow-hidden rounded-2xl aspect-video relative shadow-2xl shadow-accent/20">
             <iframe 
               src="https://www.youtube.com/embed/j2YbS2WY6ww" 
-              title="Bad Conflict in Action" 
-              frameBorder="0" 
+              title="Bad Conflict in Action"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowFullScreen
               className="absolute inset-0 w-full h-full"
@@ -96,8 +95,7 @@ export default function Home(): React.ReactNode {
             <video 
               controls 
               className="absolute inset-0 w-full h-full object-cover bg-black"
-              poster="/images/first event.jpg"
-              loop={true}
+              preload="metadata"
               muted={true}
             >
               <source src="/images/cuddles video.mp4" type="video/mp4" />
