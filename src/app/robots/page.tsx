@@ -15,22 +15,33 @@ interface Robot {
 const robots: Robot[] = [
   {
     name: "Horizon",
-    description: "Horizon is a fierce horizontal spinner. Version 2 features a TPU chassis to absorb hits and a 101g AR500 weapon spinning at 18,000 RPM. With a tip speed of 350 MPH, it's designed to be a formable foe. It uses a belt-driven system to protect the motor from direct impacts.",
+    description: "Horizon is a fierce horizontal spinner. Its latest iteration features a TPU chassis to absorb hits and a 101g AR500 weapon with a tip speed of 350 MPH. It's designed to pack a serious punch. It uses a direct-drive weapon motor to ensure instant torque and avoid belts.",
     image: "/images/horizon v3.jpg",
     stats: {
-      weight: "450g",
-      weapon: "101g AR500 spinner @ 18k RPM",
+      weight: "448g",
+      weapon: "Horizontal Spinner",
       dimensions: "6.6in x 4.9in x 1.5in",
-      winLoss: "3W - 2L (V1)"
+      winLoss: "9W - 4L"
+    }
+  },
+  {
+    name: "Bubbles",
+    description: "Bloop bloop.",
+    image: "/images/bubbles v1.jpg",
+    stats: {
+      weight: "463g",
+      weapon: "Vertical Spinner",
+      dimensions: "7in x 6.5in x 4in",
+      winLoss: "2W - 4L"
     }
   },
   {
     name: "Twofold",
-    description: "Twofold is a double wedge designed to get under opponents and push them around. Its unique design includes a spare wedge ready to go, allowing it to take significantly more damage. It sits just 1 inch off the ground, causing some weapons to miss entirely.",
-    image: "/images/Twofold.png",
+    description: "Twofold is a double wedge designed to get under opponents and push them around. Its unique design includes a spare wedge ready to go, allowing it to take significantly more damage. Because it sits just 1 inch off the ground, some weapons aren't even able to hit it.",
+    image: "/images/twofold v2.jpg",
     stats: {
-      weight: "0.5lb",
-      weapon: "Invertible Wedge",
+      weight: "250g",
+      weapon: "Dual Wedge",
       dimensions: "7in x 7.2in x 1in",
       winLoss: "5W - 7L"
     }
@@ -40,9 +51,9 @@ const robots: Robot[] = [
     description: "Scuttles is an antweight wedge robot focused on control and reliability. Designed to withstand heavy hits and control the flow of the match.",
     image: "/images/Scuttles.png",
     stats: {
-      weight: "1lb",
+      weight: "250g",
       weapon: "Wedge",
-      winLoss: "Record 1-2"
+      winLoss: "5W - 4L"
     }
   }
 ];
