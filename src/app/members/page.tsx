@@ -7,6 +7,7 @@ interface Member {
   image: string;
   github?: string;
   linkedin?: string;
+  robots?: string[];
 }
 
 const members: Member[] = [
@@ -16,7 +17,8 @@ const members: Member[] = [
     description: "Co-Founder and Team Manager of Bad Conflict. Software Developer and combat robotics enthusiast focused on making competitive robotics accessible to everyone.",
     image: "https://avatars.githubusercontent.com/u/78337317?v=4",
     github: "https://github.com/aidankeighron",
-    linkedin: "https://www.linkedin.com/in/aidan-keighron/"
+    linkedin: "https://www.linkedin.com/in/aidan-keighron/",
+    robots: ["Horizon", "Twofold"]
   },
   {
     name: "Graeme McDaniel",
@@ -24,6 +26,7 @@ const members: Member[] = [
     description: "Co-Founder and Lead Computer-Aided Design (CAD) specialist for Bad Conflict. Responsible for the structural integrity and mechanical design of our most advanced robots.",
     image: "https://media.licdn.com/dms/image/v2/D4D03AQGDyaUV5toOxA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1687843644124?e=1774483200&v=beta&t=i1Qqd8OHpn8yP4QHJxvmHADotGwztqUidf187VEFfBo",
     linkedin: "https://www.linkedin.com/in/graeme-mcdaniel-054382202/",
+    robots: ["Scuttles", "Bubbles"]
   },
   {
     name: "Alanna Ping",
@@ -31,25 +34,28 @@ const members: Member[] = [
     description: "Integral team member contributing to robot assembly and competition strategy. Passionate about engineering and robot combat.",
     image: "https://media.licdn.com/dms/image/v2/D5603AQFkhgasVBqtHw/profile-displayphoto-shrink_400_400/B56Zbvb8HHGsAg-/0/1747773803159?e=1774483200&v=beta&t=CJiOaLKuna7j8nKX4mqdqopO93IXvy7EZjMlco9UnD4",
     linkedin: "https://www.linkedin.com/in/alanna-ping-189b55277/",
+    robots: ["Blover", "Porcupine"]
   },
   {
     name: "Karissa Garnache",
     role: "Team Member",
     description: "Contributing member of Bad Conflict, supporting the team in various engineering and operational capacities.",
     image: "/images/logoWithText.png", // Placeholder
+    robots: ["Carrot", "Carrot Shredder"]
   },
   {
     name: "Carlos Avalos",
     role: "Team Member",
     description: "Member of the Bad Conflict team, focusing on the development and refinement of antweight combat robots.",
     image: "https://media.licdn.com/dms/image/v2/D5603AQHk_LA48xCjcQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719234824745?e=1774483200&v=beta&t=h_bcLUNVJsODjXTHsMjLGl1rKT7ZUd37Xu28XFTPHBU",
-    linkedin: "https://www.linkedin.com/in/luis-carlos-avalos-medina-/"
+    linkedin: "https://www.linkedin.com/in/luis-carlos-avalos-medina-/",
+    robots: ["Bean"]
   }
 ];
 
 /**
  * Members page component.
- * Displays a grid of team members with their roles and bios.
+ * Displays a grid of team members with their roles and bios, along with the robots they run.
  * @returns {JSX.Element} The rendered members page.
  */
 export default function MembersPage(): React.ReactNode {
@@ -76,9 +82,22 @@ export default function MembersPage(): React.ReactNode {
             </div>
             <h2 className="text-2xl font-bold mb-1">{member.name}</h2>
             <span className="text-accent font-bold text-sm tracking-widest uppercase mb-4">{member.role}</span>
-            <p className="text-gray-400 mb-6 leading-relaxed text-sm">
+            <p className="text-gray-400 mb-6 leading-relaxed text-sm flex-grow">
               {member.description}
             </p>
+            
+            {member.robots && member.robots.length > 0 && (
+              <div className="w-full mb-6">
+                <h3 className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">Robots</h3>
+                <div className="flex flex-wrap justify-center gap-2">
+                  {member.robots.map(robot => (
+                    <span key={robot} className="px-3 py-1 bg-accent/10 border border-accent/20 text-accent font-medium text-xs rounded-full">
+                      {robot}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
             
             <div className="flex gap-4 mt-auto">
               {member.github && (
@@ -98,3 +117,4 @@ export default function MembersPage(): React.ReactNode {
     </div>
   );
 }
+
