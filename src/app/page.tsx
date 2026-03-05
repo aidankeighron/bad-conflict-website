@@ -46,12 +46,12 @@ export default function Home(): React.ReactNode {
         <h2 className="text-3xl md:text-4xl font-bold mb-8">Who We Are</h2>
         <div className="space-y-6 text-lg text-gray-400 leading-relaxed text-left md:text-center">
           <p>
-            Bad Conflict is a combat robotics team dedicated to pushing the limits of what's possible in the 1lb weight class. 
+            Bad Conflict is a combat robotics team dedicated to pushing the limits of whats possible in the 1lb weight class. 
             Founded with a philosophy of removing barriers to entry, we support our members through every stage of the creation process: providing 
             funding, technical support, and collaborative environment.
           </p>
           <p>
-            With such a constraining weight limit, we constanty innovate to make our robots more durable, efficient, and destructive. 
+            With such a constraining weight limit, we constantly innovate to make our robots more durable, efficient, and destructive. 
             Through corporate sponsorships and teamwork, we ensure that anyone with a passion for engineering 
             can compete at the highest level of combat robotics.
           </p>
