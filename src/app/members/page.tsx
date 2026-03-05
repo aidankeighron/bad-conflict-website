@@ -21,26 +21,29 @@ const members: Member[] = [
   {
     name: "Graeme McDaniel",
     role: "CAD Lead",
-    description: "Lead Computer-Aided Design (CAD) specialist for Bad Conflict. Responsible for the structural integrity and mechanical design of our most advanced robots.",
-    image: "/images/logo.png", // Placeholder
+    description: "Co-Founder and Lead Computer-Aided Design (CAD) specialist for Bad Conflict. Responsible for the structural integrity and mechanical design of our most advanced robots.",
+    image: "https://media.licdn.com/dms/image/v2/D4D03AQGDyaUV5toOxA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1687843644124?e=1774483200&v=beta&t=i1Qqd8OHpn8yP4QHJxvmHADotGwztqUidf187VEFfBo",
+    linkedin: "https://www.linkedin.com/in/graeme-mcdaniel-054382202/",
   },
   {
     name: "Alanna Ping",
     role: "Team Member",
     description: "Integral team member contributing to robot assembly and competition strategy. Passionate about engineering and robot combat.",
-    image: "/images/logo.png", // Placeholder
+    image: "https://media.licdn.com/dms/image/v2/D5603AQFkhgasVBqtHw/profile-displayphoto-shrink_400_400/B56Zbvb8HHGsAg-/0/1747773803159?e=1774483200&v=beta&t=CJiOaLKuna7j8nKX4mqdqopO93IXvy7EZjMlco9UnD4",
+    linkedin: "https://www.linkedin.com/in/alanna-ping-189b55277/",
   },
   {
     name: "Karissa Garnache",
     role: "Team Member",
     description: "Contributing member of Bad Conflict, supporting the team in various engineering and operational capacities.",
-    image: "/images/logo.png", // Placeholder
+    image: "/images/logoWithText.png", // Placeholder
   },
   {
-    name: "Zander",
+    name: "Carlos Avalos",
     role: "Team Member",
     description: "Member of the Bad Conflict team, focusing on the development and refinement of antweight combat robots.",
-    image: "/images/logo.png", // Placeholder
+    image: "https://media.licdn.com/dms/image/v2/D5603AQHk_LA48xCjcQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719234824745?e=1774483200&v=beta&t=h_bcLUNVJsODjXTHsMjLGl1rKT7ZUd37Xu28XFTPHBU",
+    linkedin: "https://www.linkedin.com/in/luis-carlos-avalos-medina-/"
   }
 ];
 
