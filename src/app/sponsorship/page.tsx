@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import FeaturedProjectsCarousel from "@/components/FeaturedProjectsCarousel";
 
 /**
  * Sponsorship page for the BadConflict website.
@@ -110,27 +111,10 @@ export default function Sponsorship(): React.ReactNode {
         </div>
       </section>
       
-      {/* Featured Robot */}
+      {/* Featured Projects Carousel */}
       <section className="max-w-5xl mx-auto px-4 py-24">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Featured Project: Bubbles</h2>
-        <div className="premium-card p-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl shadow-accent/20">
-             <Image src="/images/bubbles v1.jpg" alt="Bubbles Antweight Robot" fill className="object-cover" />
-          </div>
-          <div>
-            <div className="inline-block bg-accent/20 text-accent px-3 py-1 rounded-full text-sm font-bold mb-4">
-              1lb Antweight Combat Robot
-            </div>
-            <h3 className="text-2xl font-bold mb-4">Offensive Strength &amp; Versatility</h3>
-            <p className="text-gray-400 mb-6">Bubbles is a custom-designed antweight featuring a lightweight carbon fiber chassis and a devastating vertical spinner, constantly evolving after each competition.</p>
-            <ul className="space-y-4 text-gray-300">
-              <li><strong className="text-white block mb-1">Chassis:</strong> Lightweight, durable carbon fiber with TPU armor to absorb heavy impacts.</li>
-              <li><strong className="text-white block mb-1">Drive:</strong> Four-wheel drive for precision maneuverability and traction on the arena floor.</li>
-              <li><strong className="text-white block mb-1">Weapon:</strong> Powerful vertical spinner to deliver high-impact blows capable of shredding opponent armor.</li>
-              <li><strong className="text-white block mb-1">Ongoing Innovation:</strong> Our latest revision includes hub motors to maximize battery space and reduce friction, lowering current draw.</li>
-            </ul>
-          </div>
-        </div>
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Featured Projects</h2>
+        <FeaturedProjectsCarousel />
       </section>
 
       {/* CTA / Contact */}
