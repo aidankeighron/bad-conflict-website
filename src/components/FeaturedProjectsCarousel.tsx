@@ -5,6 +5,7 @@ import Image from "next/image";
 
 /**
  * FeaturedProjectsCarousel component to cycle through robot projects.
+ * Shows the current item and peeks the next item on the right, half in shadow.
  * @returns {JSX.Element} The rendered carousel.
  */
 const featuredProjects = [
@@ -36,6 +37,11 @@ const featuredProjects = [
   }
 ];
 
+/** Width of each card as a percentage of the track container, leaving room for the peek. */
+const CARD_WIDTH_PERCENT = 82;
+/** Gap between cards in rem. */
+const GAP_REM = 2;
+
 export default function FeaturedProjectsCarousel(): React.ReactNode {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -47,38 +53,70 @@ export default function FeaturedProjectsCarousel(): React.ReactNode {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + featuredProjects.length) % featuredProjects.length);
   };
 
-  const project = featuredProjects[currentIndex];
+  const trackTranslate = `calc(-${currentIndex * CARD_WIDTH_PERCENT}% - ${currentIndex * GAP_REM}rem)`;
 
   return (
-    <div className="relative">
-      <div className="premium-card p-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl shadow-accent/20">
-          <Image 
-            src={project.image} 
-            alt={project.name} 
-            fill 
-            className="object-cover transition-opacity duration-500" 
-          />
-        </div>
-        <div>
-          <div className="inline-block bg-accent/20 text-accent px-3 py-1 rounded-full text-sm font-bold mb-4">
-            {project.type}
-          </div>
-          <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
-          <p className="text-gray-400 mb-6">{project.description}</p>
-          <ul className="space-y-4 text-gray-300 min-h-[220px]">
-            {project.specs.map((spec, index) => (
-              <li key={index}><strong className="text-white block mb-1">{spec.label}:</strong> {spec.value}</li>
-            ))}
-          </ul>
+    <div className="w-full">
+      {/* Outer mask - clips the track but lets the peeking card show */}
+      <div className="w-full overflow-hidden px-4 md:px-8 lg:px-16">
+        {/* Sliding track */}
+        <div
+          className="flex transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]"
+          style={{ transform: `translateX(${trackTranslate})`, gap: `${GAP_REM}rem` }}
+        >
+          {featuredProjects.map((project, index) => {
+            const isActive = index === currentIndex;
+
+            return (
+              <div
+                key={index}
+                className={`relative flex-shrink-0 transition-all duration-700 ${isActive ? "opacity-100" : "opacity-100 cursor-pointer"}`}
+                style={{ width: `${CARD_WIDTH_PERCENT}%` }}
+                onClick={() => {
+                  if (!isActive) setCurrentIndex(index);
+                }}
+              >
+                <div className="premium-card p-6 md:p-8 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start lg:items-center relative overflow-hidden">
+                  {/* Dark overlay for non-active cards */}
+                  <div
+                    className="absolute inset-0 bg-black/70 backdrop-blur-sm z-10 transition-opacity duration-700 pointer-events-none rounded-2xl"
+                    style={{ opacity: isActive ? 0 : 1 }}
+                  />
+                  <div className="relative aspect-square w-full rounded-2xl overflow-hidden shadow-2xl shadow-accent/20">
+                    <Image
+                      src={project.image}
+                      alt={project.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="flex flex-col justify-center">
+                    <div className="inline-block bg-accent/20 text-accent px-3 py-1 rounded-full text-sm font-bold mb-4 w-max border border-accent/30">
+                      {project.type}
+                    </div>
+                    <h3 className="text-2xl md:text-3xl font-black mb-4 tracking-tight">{project.title}</h3>
+                    <p className="text-gray-400 mb-6 leading-relaxed">{project.description}</p>
+                    <ul className="space-y-4 text-gray-300">
+                      {project.specs.map((spec, specIndex) => (
+                        <li key={specIndex} className="flex items-start">
+                          <span className="text-accent mr-3 mt-0.5 leading-none">▹</span>
+                          <span><strong className="text-white">{spec.label}:</strong> {spec.value}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
 
       {/* Carousel Navigation */}
       <div className="flex justify-center mt-8 gap-4">
-        <button 
+        <button
           onClick={prevSlide}
-          className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors border border-white/20"
+          className="p-3 rounded-full bg-white/10 hover:bg-white/20 hover:scale-110 active:scale-95 transition-all duration-200 border border-white/20"
           aria-label="Previous project"
         >
           <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -90,14 +128,14 @@ export default function FeaturedProjectsCarousel(): React.ReactNode {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full transition-all ${index === currentIndex ? "bg-accent scale-125" : "bg-white/30 hover:bg-white/50"}`}
+              className={`rounded-full transition-all duration-500 ${index === currentIndex ? "w-8 h-3 bg-accent" : "w-3 h-3 bg-white/30 hover:bg-white/50"}`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
         </div>
-        <button 
+        <button
           onClick={nextSlide}
-          className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors border border-white/20"
+          className="p-3 rounded-full bg-white/10 hover:bg-white/20 hover:scale-110 active:scale-95 transition-all duration-200 border border-white/20"
           aria-label="Next project"
         >
           <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">

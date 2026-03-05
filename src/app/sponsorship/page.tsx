@@ -112,7 +112,7 @@ export default function Sponsorship(): React.ReactNode {
       </section>
       
       {/* Featured Projects Carousel */}
-      <section className="max-w-5xl mx-auto px-4 py-24">
+      <section className="w-full py-24">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Featured Projects</h2>
         <FeaturedProjectsCarousel />
       </section>
