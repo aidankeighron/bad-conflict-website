@@ -16,8 +16,9 @@ const robots: Robot[] = [
     stats: {
       weight: "448g",
       weapon: "Horizontal Spinner",
-      dimensions: "6.6in x 4.9in x 1.5in",
-      winLoss: "9W - 4L"
+      weaponWeight: "101g AR500 Steel",
+      tipSpeed: "350 MPH",
+      chassis: "TPU"
     }
   },
   {
@@ -28,7 +29,7 @@ const robots: Robot[] = [
       weight: "463g",
       weapon: "Vertical Spinner",
       dimensions: "7in x 6.5in x 4in",
-      winLoss: "2W - 4L"
+      weaponDrive: "Belt Drive",
     }
   },
   {
@@ -39,7 +40,7 @@ const robots: Robot[] = [
       weight: "300g",
       weapon: "Wedge",
       dimensions: "7in x 8in x 1in",
-      winLoss: "4W - 4L"
+      chassis: "TPU"
     }
   },
   {
@@ -50,7 +51,7 @@ const robots: Robot[] = [
       weight: "410g",
       weapon: "Horizontal Spinner",
       dimensions: "7in x 6in x 2.5in",
-      winLoss: "1W - 2L"
+      weaponDrive: "Belt Drive"
     }
   },
     {
@@ -61,7 +62,6 @@ const robots: Robot[] = [
       weight: "398g",
       weapon: "Horizontal Spinner",
       dimensions: "6.8in x 5.8in x 2.3in",
-      winLoss: "1W - 2L"
     }
   },
   {
@@ -73,7 +73,8 @@ const robots: Robot[] = [
       weight: "250g",
       weapon: "Dual Wedge",
       dimensions: "7in x 7.2in x 1in",
-      winLoss: "5W - 7L"
+      wedges: "2",
+      groundClearance: "~0.25in"
     }
   },
   {
@@ -84,7 +85,6 @@ const robots: Robot[] = [
     stats: {
       weight: "250g",
       weapon: "Wedge",
-      winLoss: "5W - 4L"
     }
   },
   {
@@ -96,7 +96,6 @@ const robots: Robot[] = [
       weight: "280g",
       weapon: "Wedge",
       dimensions: "7in x 6in x 2in",
-      winLoss: "2W - 1L"
     }
   },
   {
@@ -108,7 +107,6 @@ const robots: Robot[] = [
       weight: "230g",
       weapon: "Wedge",
       dimensions: "6.5in x 5.5in x 1.8in",
-      winLoss: "2W - 1L"
     }
   },
 ];
