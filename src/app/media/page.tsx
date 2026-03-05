@@ -117,9 +117,9 @@ export default function MediaPage(): React.ReactNode {
   }
 
   const tabs: { key: Tab; label: string; count: number }[] = [
-    { key: "robots", label: "🤖 Robots", count: robotPhotos.length },
-    { key: "team", label: "👥 Team & Events", count: teamPhotos.length },
-    { key: "videos", label: "🎬 Videos", count: videos.length },
+    { key: "robots", label: "Robots", count: robotPhotos.length },
+    { key: "team", label: "Team & Events", count: teamPhotos.length },
+    { key: "videos", label: "Videos", count: videos.length },
   ];
 
   return (
