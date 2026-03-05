@@ -101,19 +101,19 @@ export default function RobotsPage(): React.ReactNode {
     <div className="max-w-7xl mx-auto px-4 py-12">
       <h1 className="text-4xl md:text-5xl font-black mb-12 text-center">THE <span className="text-accent">ROBOTS</span></h1>
       
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {robots.map((robot) => (
-          <div key={robot.name} className="premium-card overflow-hidden flex flex-col md:flex-row h-full">
-            <div className="md:w-1/2 relative h-64 md:h-auto bg-black/20">
+          <div key={robot.name} className="premium-card overflow-hidden flex flex-col h-full rounded-2xl">
+            <div className="relative h-64 w-full">
               <Image
                 src={robot.image}
                 alt={robot.name}
                 fill
-                className="object-contain p-8"
+                className="object-cover"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div className="md:w-1/2 p-8 flex flex-col justify-between">
+            <div className="p-6 flex flex-col flex-grow justify-between">
               <div>
                 <h2 className="text-3xl font-bold mb-4">{robot.name}</h2>
                 <p className="text-gray-400 mb-6 leading-relaxed">
@@ -122,7 +122,7 @@ export default function RobotsPage(): React.ReactNode {
               </div>
               
               {robot.stats && (
-                <div className="grid grid-cols-2 gap-4 text-sm">
+                <div className="grid grid-cols-2 gap-4 text-sm mt-auto">
                   {Object.entries(robot.stats).map(([key, value]) => (
                     <div key={key}>
                       <span className="block text-gray-500 uppercase tracking-wider text-[10px] font-bold">{key}</span>
