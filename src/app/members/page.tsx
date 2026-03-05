@@ -57,7 +57,7 @@ export default function MembersPage(): React.ReactNode {
     <div className="max-w-7xl mx-auto px-4 py-12">
       <h1 className="text-4xl md:text-5xl font-black mb-4 text-center">MEET THE <span className="text-accent">TEAM</span></h1>
       <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16 px-4">
-        Our team is a diverse group of engineers and enthusiasts dedicated to lower the barrier to entry in combat robotics.
+        Our team is a diverse group of engineers dedicated to lowering the barrier to entry in combat robotics.
       </p>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
