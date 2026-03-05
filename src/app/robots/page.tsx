@@ -22,7 +22,7 @@ const robots: Robot[] = [
   },
   {
     name: "Bubbles",
-    description: "Bloop bloop.",
+    description: "Bubbles is a vertical spinner with a deceptively bubbly name and a not-so-bubbly weapon. Its wide stance gives it excellent stability, letting the bar spin up fast and stay that way. Bubbles hits hard and takes hits even harder thanks to its reinforced TPU frame.",
     image: "/images/bubbles v1.webp",
     stats: {
       weight: "463g",
@@ -33,7 +33,7 @@ const robots: Robot[] = [
   },
   {
     name: "Bean",
-    description: "Bean.",
+    description: "Bean is a low-profile wedge built for control and aggression. Its wide, flat geometry lets it scoop under nearly any opponent, and its solid TPU construction shrugs off punishment that would destroy less beefy bots. It may look simple, but Bean has a mean streak.",
     image: "/images/bean v1.webp",
     stats: {
       weight: "300g",
@@ -44,7 +44,7 @@ const robots: Robot[] = [
   },
   {
     name: "Carrot Shredder",
-    description: "Carrots shredded.",
+    description: "Carrot Shredder is a lightweight horizontal spinner with a no-nonsense approach to combat: spin fast, hit hard, and let the pieces fall where they may. Its low-slung weapon disc reaches opponents before they even know what's coming, making it a constant threat from the opening buzzer.",
     image: "/images/carrot shredder v1.webp",
     stats: {
       weight: "410g",
@@ -55,12 +55,12 @@ const robots: Robot[] = [
   },
     {
     name: "Blover",
-    description: "Blow.",
+    description: "Blover is a compact horizontal spinner that prioritizes reliability over flash. Its sturdy chassis keeps all the important bits intact through grueling matches, and its spinning disc builds up enough energy to send opponents into the walls. Don't let the name fool you it definitely bites.",
     image: "/images/blover v1.webp",
     stats: {
-      weight: "410g",
+      weight: "398g",
       weapon: "Horizontal Spinner",
-      dimensions: "7in x 6in x 2.5in",
+      dimensions: "6.8in x 5.8in x 2.3in",
       winLoss: "1W - 2L"
     }
   },
@@ -89,7 +89,7 @@ const robots: Robot[] = [
   },
   {
     name: "Carrot",
-    description: "Carrots.",
+    description: "Carrot is a force to be reckoned with. Built to push and control, its angled wedge face gets under opponents with surprising ease, and it has the battle scars to prove it.",
     image: "/images/carrot v1.webp",
     isFirstBot: true,
     stats: {
@@ -101,13 +101,13 @@ const robots: Robot[] = [
   },
   {
     name: "Porcupine",
-    description: "Porcupine.",
+    description: "Porcupine is a wedge with a spiky attitude. Despite being a light bot, it punches well above its weight with a low wedge angle that slides under opponents before they can react. Compact, quick, and surprisingly resilient.",
     image: "/images/porcupine v1.webp",
     isFirstBot: true,
     stats: {
       weight: "230g",
       weapon: "Wedge",
-      dimensions: "7in x 6in x 2in",
+      dimensions: "6.5in x 5.5in x 1.8in",
       winLoss: "2W - 1L"
     }
   },
