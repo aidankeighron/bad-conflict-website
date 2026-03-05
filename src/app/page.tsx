@@ -46,13 +46,13 @@ export default function Home(): React.ReactNode {
         <h2 className="text-3xl md:text-4xl font-bold mb-8">Who We Are</h2>
         <div className="space-y-6 text-lg text-gray-400 leading-relaxed text-left md:text-center">
           <p>
-            Bad Conflict is an antweight combat robotics team dedicated to pushing the limits of what's possible in the 1lb weight class. 
-            Founded with a philosophy of removing barriers to entry, we support our members through every stage of the creation process—from 
-            initial CAD design to wiring and final assembly.
+            Bad Conflict is a combat robotics team dedicated to pushing the limits of what's possible in the 1lb weight class. 
+            Founded with a philosophy of removing barriers to entry, we support our members through every stage of the creation process: providing 
+            funding, technical support, and collaborative environment.
           </p>
           <p>
             With such a constraining weight limit, we constanty innovate to make our robots more durable, efficient, and destructive. 
-            Through corporate sponsorships and a collaborative team environment, we ensure that anyone with a passion for engineering 
+            Through corporate sponsorships and teamwork, we ensure that anyone with a passion for engineering 
             can compete at the highest level of combat robotics.
           </p>
         </div>
@@ -77,6 +77,8 @@ export default function Home(): React.ReactNode {
               controls 
               className="absolute inset-0 w-full h-full object-cover bg-black"
               poster="/images/first event.jpg"
+              loop={true}
+              muted={true}
             >
               <source src="/images/cuddles video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
@@ -90,7 +92,7 @@ export default function Home(): React.ReactNode {
         <div className="premium-card p-8">
           <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mb-6 text-accent font-bold">#1</div>
           <h3 className="text-xl font-bold mb-4">Innovation</h3>
-          <p className="text-gray-400 font-medium">Constantly iterating on designs like Horizon and Twofold to stay ahead of the competition.</p>
+          <p className="text-gray-400 font-medium">Constantly iterating on designs like Horizon and Bubbles to stay ahead of the competition.</p>
         </div>
         <div className="premium-card p-8">
            <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mb-6 text-accent font-bold">#2</div>
