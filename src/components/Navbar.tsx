@@ -35,6 +35,7 @@ export default function Navbar(): React.ReactNode {
               <Link href="/robots" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Robots</Link>
               <Link href="/members" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Members</Link>
               <Link href="/sponsorship" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Sponsorship</Link>
+              <Link href="/media" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Media</Link>
             </div>
           </div>
           <div className="md:hidden">
@@ -65,6 +66,7 @@ export default function Navbar(): React.ReactNode {
             <Link href="/robots" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={() => setIsOpen(false)}>Robots</Link>
             <Link href="/members" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={() => setIsOpen(false)}>Members</Link>
             <Link href="/sponsorship" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={() => setIsOpen(false)}>Sponsorship</Link>
+            <Link href="/media" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={() => setIsOpen(false)}>Media</Link>
           </div>
         </div>
       )}
