@@ -12,7 +12,7 @@ const robots: Robot[] = [
   {
     name: "Horizon",
     description: "Horizon is a fierce horizontal spinner. Its latest iteration features a TPU chassis to absorb hits and a 101g AR500 weapon with a tip speed of 350 MPH. It's designed to pack a serious punch. It uses a direct-drive weapon motor to ensure instant torque and avoid belts.",
-    image: "/images/horizon v3.jpg",
+    image: "/images/horizon v3.webp",
     stats: {
       weight: "448g",
       weapon: "Horizontal Spinner",
@@ -23,7 +23,7 @@ const robots: Robot[] = [
   {
     name: "Bubbles",
     description: "Bloop bloop.",
-    image: "/images/bubbles v1.jpg",
+    image: "/images/bubbles v1.webp",
     stats: {
       weight: "463g",
       weapon: "Vertical Spinner",
@@ -34,7 +34,7 @@ const robots: Robot[] = [
   {
     name: "Bean",
     description: "Bean.",
-    image: "/images/bean v1.jpg",
+    image: "/images/bean v1.webp",
     stats: {
       weight: "300g",
       weapon: "Wedge",
@@ -45,7 +45,7 @@ const robots: Robot[] = [
   {
     name: "Carrot Shredder",
     description: "Carrots shredded.",
-    image: "/images/carrot shredder v1.jpg",
+    image: "/images/carrot shredder v1.webp",
     stats: {
       weight: "410g",
       weapon: "Horizontal Spinner",
@@ -56,7 +56,7 @@ const robots: Robot[] = [
     {
     name: "Blover",
     description: "Blow.",
-    image: "/images/blover v1.jpg",
+    image: "/images/blover v1.webp",
     stats: {
       weight: "410g",
       weapon: "Horizontal Spinner",
@@ -67,7 +67,7 @@ const robots: Robot[] = [
   {
     name: "Twofold",
     description: "Twofold is a double wedge designed to get under opponents and push them around. Its unique design includes a spare wedge ready to go, allowing it to take significantly more damage. Because it sits just 1 inch off the ground, some weapons aren't even able to hit it.",
-    image: "/images/twofold v2.jpg",
+    image: "/images/twofold v2.webp",
     isFirstBot: true,
     stats: {
       weight: "250g",
@@ -79,7 +79,7 @@ const robots: Robot[] = [
   {
     name: "Scuttles",
     description: "Scuttles is an antweight wedge robot focused on control and reliability. Designed to withstand heavy hits and control the flow of the match.",
-    image: "/images/Scuttles.png",
+    image: "/images/Scuttles.webp",
     isFirstBot: true,
     stats: {
       weight: "250g",
@@ -90,7 +90,7 @@ const robots: Robot[] = [
   {
     name: "Carrot",
     description: "Carrots.",
-    image: "/images/carrot v1.jpg",
+    image: "/images/carrot v1.webp",
     isFirstBot: true,
     stats: {
       weight: "280g",
@@ -102,7 +102,7 @@ const robots: Robot[] = [
   {
     name: "Porcupine",
     description: "Porcupine.",
-    image: "/images/porcupine v1.jpg",
+    image: "/images/porcupine v1.webp",
     isFirstBot: true,
     stats: {
       weight: "230g",

@@ -21,38 +21,39 @@ type TeamPhoto = {
 type VideoEntry = {
   type: "local" | "youtube";
   src: string;
+  webmSrc?: string;
   title: string;
   description: string;
 };
 
 const robotPhotos: RobotPhoto[] = [
-  { src: "/images/horizon v1.jpg", alt: "Horizon V1", label: "Horizon V1" },
-  { src: "/images/horizon v2.jpg", alt: "Horizon V2", label: "Horizon V2" },
-  { src: "/images/horizon v3.jpg", alt: "Horizon V3", label: "Horizon V3" },
-  { src: "/images/horizon v1 and bubbles.jpg", alt: "Horizon V1 and Bubbles", label: "Horizon & Bubbles" },
-  { src: "/images/horizon, twofold, and bean.jpg", alt: "Horizon, Twofold, and Bean", label: "Horizon, Twofold & Bean" },
-  { src: "/images/twofold v1.jpg", alt: "Twofold V1", label: "Twofold V1" },
-  { src: "/images/twofold v2.jpg", alt: "Twofold V2", label: "Twofold V2" },
-  { src: "/images/twofold v3.jpg", alt: "Twofold V3", label: "Twofold V3" },
-  { src: "/images/scuddles v1.jpg", alt: "Scuddles", label: "Scuddles" },
-  { src: "/images/carrot v1.jpg", alt: "Carrot V1", label: "Carrot V1" },
-  { src: "/images/carrot shredder v1.jpg", alt: "Carrot Shredder V1", label: "Carrot Shredder V1" },
-  { src: "/images/bean v1.jpg", alt: "Bean V1", label: "Bean V1" },
-  { src: "/images/blover v1.jpg", alt: "Blover", label: "Blover" },
-  { src: "/images/bubbles v1.jpg", alt: "Bubbles", label: "Bubbles" },
-  { src: "/images/porcupine v1.jpg", alt: "Porcupine", label: "Porcupine" },
-  { src: "/images/cuddles v1.jpg", alt: "Cuddles", label: "Cuddles" },
-  { src: "/images/robots photo 1.jpg", alt: "Robots Group Photo", label: "Robot Collection" },
+  { src: "/images/horizon v1.webp", alt: "Horizon V1", label: "Horizon V1" },
+  { src: "/images/horizon v2.webp", alt: "Horizon V2", label: "Horizon V2" },
+  { src: "/images/horizon v3.webp", alt: "Horizon V3", label: "Horizon V3" },
+  { src: "/images/horizon v1 and bubbles.webp", alt: "Horizon V1 and Bubbles", label: "Horizon & Bubbles" },
+  { src: "/images/horizon, twofold, and bean.webp", alt: "Horizon, Twofold, and Bean", label: "Horizon, Twofold & Bean" },
+  { src: "/images/twofold v1.webp", alt: "Twofold V1", label: "Twofold V1" },
+  { src: "/images/twofold v2.webp", alt: "Twofold V2", label: "Twofold V2" },
+  { src: "/images/twofold v3.webp", alt: "Twofold V3", label: "Twofold V3" },
+  { src: "/images/scuddles v1.webp", alt: "Scuddles", label: "Scuddles" },
+  { src: "/images/carrot v1.webp", alt: "Carrot V1", label: "Carrot V1" },
+  { src: "/images/carrot shredder v1.webp", alt: "Carrot Shredder V1", label: "Carrot Shredder V1" },
+  { src: "/images/bean v1.webp", alt: "Bean V1", label: "Bean V1" },
+  { src: "/images/blover v1.webp", alt: "Blover", label: "Blover" },
+  { src: "/images/bubbles v1.webp", alt: "Bubbles", label: "Bubbles" },
+  { src: "/images/porcupine v1.webp", alt: "Porcupine", label: "Porcupine" },
+  { src: "/images/cuddles v1.webp", alt: "Cuddles", label: "Cuddles" },
+  { src: "/images/robots photo 1.webp", alt: "Robots Group Photo", label: "Robot Collection" },
 ];
 
 const teamPhotos: TeamPhoto[] = [
-  { src: "/images/team photo 1.jpg", alt: "Team Photo", label: "Team Photo" },
-  { src: "/images/first event.jpg", alt: "First Event", label: "First Event" },
-  { src: "/images/aidan comp.jpg", alt: "Aidan at competition", label: "Aidan at Competition" },
-  { src: "/images/carlos comp.jpg", alt: "Carlos at competition", label: "Carlos at Competition" },
-  { src: "/images/karissa comp.jpg", alt: "Karissa at competition", label: "Karissa at Competition" },
-  { src: "/images/carlos and aidan comp.jpg", alt: "Carlos and Aidan at competition", label: "Carlos & Aidan" },
-  { src: "/images/graeme and aidan comp.jpg", alt: "Graeme and Aidan at competition", label: "Graeme & Aidan" },
+  { src: "/images/team photo 1.webp", alt: "Team Photo", label: "Team Photo" },
+  { src: "/images/first event.webp", alt: "First Event", label: "First Event" },
+  { src: "/images/aidan comp.webp", alt: "Aidan at competition", label: "Aidan at Competition" },
+  { src: "/images/carlos comp.webp", alt: "Carlos at competition", label: "Carlos at Competition" },
+  { src: "/images/karissa comp.webp", alt: "Karissa at competition", label: "Karissa at Competition" },
+  { src: "/images/carlos and aidan comp.webp", alt: "Carlos and Aidan at competition", label: "Carlos & Aidan" },
+  { src: "/images/graeme and aidan comp.webp", alt: "Graeme and Aidan at competition", label: "Graeme & Aidan" },
 ];
 
 const videos: VideoEntry[] = [
@@ -65,30 +66,35 @@ const videos: VideoEntry[] = [
   {
     type: "local",
     src: "/images/horizon vs bubbles.mp4",
+    webmSrc: "/images/horizon vs bubbles.webm",
     title: "Horizon vs Bubbles",
     description: "A team sparring session between Horizon and Bubbles.",
   },
   {
     type: "local",
     src: "/images/scuttles video.mp4",
+    webmSrc: "/images/scuttles video.webm",
     title: "Scuttles Fight",
     description: "Scuttles taking out a horizontal spinner.",
   },
   {
     type: "local",
     src: "/images/horizon video 2.mp4",
+    webmSrc: "/images/horizon video 2.webm",
     title: "Horizon Fight",
     description: "Horizon fighting a drop saw.",
   },
-    {
+  {
     type: "local",
     src: "/images/horizon video.mp4",
+    webmSrc: "/images/horizon video.webm",
     title: "Horizon Testing",
     description: "Horizon taking on the can.",
   },
   {
     type: "local",
     src: "/images/cuddles video.mp4",
+    webmSrc: "/images/cuddles video.webm",
     title: "Cuddles Fight",
     description: "Cuddles in action at an event.",
   },
@@ -264,6 +270,7 @@ export default function MediaPage(): React.ReactNode {
                       className="absolute inset-0 w-full h-full object-cover bg-black"
                       preload="metadata"
                     >
+                      {video.webmSrc && <source src={video.webmSrc} type="video/webm" />}
                       <source src={video.src} type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>

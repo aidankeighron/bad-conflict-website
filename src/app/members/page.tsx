@@ -40,7 +40,7 @@ const members: Member[] = [
     name: "Karissa Garnache",
     role: "Core Values Lead",
     description: "Core Values Lead of Bad Conflict, supporting the team in various engineering and operational capacities.",
-    image: "/images/logoWithText.png", // Placeholder
+    image: "/images/logoWithText.webp", // Placeholder
     robots: ["Carrot", "Carrot Shredder"]
   },
   {

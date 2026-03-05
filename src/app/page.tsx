@@ -77,6 +77,7 @@ export default function Home(): React.ReactNode {
               className="absolute inset-0 w-full h-full object-cover bg-black"
               preload="metadata"
             >
+              <source src="/images/horizon video.webm" type="video/webm" />
               <source src="/images/horizon video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -87,6 +88,7 @@ export default function Home(): React.ReactNode {
               className="absolute inset-0 w-full h-full object-cover bg-black"
               preload="metadata"
             >
+              <source src="/images/horizon vs bubbles.webm" type="video/webm" />
               <source src="/images/horizon vs bubbles.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -98,6 +100,7 @@ export default function Home(): React.ReactNode {
               preload="metadata"
               muted={true}
             >
+              <source src="/images/cuddles video.webm" type="video/webm" />
               <source src="/images/cuddles video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
