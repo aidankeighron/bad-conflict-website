@@ -13,8 +13,8 @@ interface Member {
 const members: Member[] = [
   {
     name: "Aidan Keighron",
-    role: "Team Manager",
-    description: "Co-Founder and Team Manager of Bad Conflict. Software Developer and combat robotics enthusiast focused on making competitive robotics accessible to everyone.",
+    role: "Team Principle",
+    description: "Co-Founder and Team Principle of Bad Conflict. Software Developer and combat robotics enthusiast focused on making competitive robotics accessible to everyone.",
     image: "https://avatars.githubusercontent.com/u/78337317?v=4",
     github: "https://github.com/aidankeighron",
     linkedin: "https://www.linkedin.com/in/aidan-keighron/",
@@ -30,16 +30,16 @@ const members: Member[] = [
   },
   {
     name: "Alanna Ping",
-    role: "Team Member",
-    description: "Integral team member contributing to robot assembly and competition strategy. Passionate about engineering and robot combat.",
+    role: "Media Manager",
+    description: "Media manager and integral team member contributing to robot assembly and competition strategy. Passionate about engineering and robot combat.",
     image: "https://media.licdn.com/dms/image/v2/D5603AQFkhgasVBqtHw/profile-displayphoto-shrink_400_400/B56Zbvb8HHGsAg-/0/1747773803159?e=1774483200&v=beta&t=CJiOaLKuna7j8nKX4mqdqopO93IXvy7EZjMlco9UnD4",
     linkedin: "https://www.linkedin.com/in/alanna-ping-189b55277/",
     robots: ["Blover", "Porcupine"]
   },
   {
     name: "Karissa Garnache",
-    role: "Team Member",
-    description: "Contributing member of Bad Conflict, supporting the team in various engineering and operational capacities.",
+    role: "Core Values Lead",
+    description: "Core Values Lead of Bad Conflict, supporting the team in various engineering and operational capacities.",
     image: "/images/logoWithText.png", // Placeholder
     robots: ["Carrot", "Carrot Shredder"]
   },
