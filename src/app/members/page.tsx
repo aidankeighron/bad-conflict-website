@@ -13,7 +13,7 @@ interface Member {
 const members: Member[] = [
   {
     name: "Aidan Keighron",
-    role: "Team Principle",
+    role: "Team Principal",
     description: "Co-Founder and Team Principle of Bad Conflict. Software Developer and combat robotics enthusiast focused on making competitive robotics accessible to everyone.",
     image: "https://avatars.githubusercontent.com/u/78337317?v=4",
     github: "https://github.com/aidankeighron",
